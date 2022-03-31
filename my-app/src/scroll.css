@@ -1,0 +1,10 @@
+.scrollbar{
+    background-color: #fffffff3;
+    color: rgb(125, 126, 126);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .scrollbar:hover{
+    color: black;
+  }

@@ -1,0 +1,17 @@
+.header{
+    color: black;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body{
+    color: black;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+}
+.filmText{
+    color:#808080;
+}
+.filmText:hover{
+    color:#808080;
+}

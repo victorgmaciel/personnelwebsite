@@ -1,0 +1,22 @@
+.Profile{
+    font-family: 'Share Tech Mono', monospace;
+}
+.Hello {
+    font-weight: 900;
+    font-size: x-large;
+}
+.description {
+    font-weight: 100;
+}
+.Social-icons{
+    padding: .5em;
+    line-height: 2.7;
+    font-size: 1.2em;
+}
+.icon-cog{
+    color: black;
+    padding: 5px;
+}
+.icon-cog:hover{
+    color:orange
+}
