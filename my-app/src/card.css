@@ -12,6 +12,18 @@
 .card:hover{
     color: orange;
 }
+.btn-primary-spacing{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.button-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 img {
     float: left;

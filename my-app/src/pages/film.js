@@ -1,9 +1,14 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import Button from "react-bootstrap/Button";
+import { useNavigate } from 'react-router-dom';
 import '../film.css'
 
-function film() {
+function Film() {
+    let navigate = useNavigate();
+
     return (
+        <div>
         <div>
             <h1 className='header text-center'>Film</h1>
             <div className='container row justify-content-center'>
@@ -31,6 +36,11 @@ function film() {
                 </Card>
             </div>
         </div>
+        <br/>
+        <div className='button-container'>
+        <Button variant="outline-dark" onClick={() => navigate('/')}>Home</Button>
+        </div>
+        </div>
     );
 }
-export default film
+export default Film

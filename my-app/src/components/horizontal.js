@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import HorizontalScroll from 'react-scroll-horizontal';
-import '../../src/scroll.css';
+import React from 'react';
+import Button from "react-bootstrap/Button";
+import { useNavigate } from 'react-router-dom';
+import '../../src/button.css';
 
-export default class ScrollingHorizontally extends Component {
-    render() {
-        const child = { width: '25em', height: '50em' }
-        const parent = { width: '50%', height: '1.5em' }
-        return (
-            <div className='center scrollbar' style={parent} >
-                <HorizontalScroll className='scroll-horizontal'>
-                    <div onClick={event => window.location.href = '/projects'} style={child} >Projects
-                    </div>
-                    <div onClick={event => window.location.href = '/film'} style={child} >Film</div>
-                    <div onClick={event => window.location.href = '/about'} style={child} >About</div>
-                </HorizontalScroll>
-            </div>
-        )
-    }
+function ScrollingHorizontally() {
+    let navigate = useNavigate();
+    return (
+        <div className="button-container">
+            <Button className="btn-primary-spacing" variant="outline-dark" onClick={() => navigate('/projects')}>Projects</Button>
+            <Button className="btn-primary-spacing" variant="outline-dark" onClick={() => navigate('/film')}>Film</Button>
+            <Button className="btn-primary-spacing" variant="outline-dark" onClick={() => navigate('about')}>About</Button>
+        </div>
+    )
 }
+export default ScrollingHorizontally;
