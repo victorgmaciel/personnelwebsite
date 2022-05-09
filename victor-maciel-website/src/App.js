@@ -4,7 +4,7 @@ import ScrollingHorizontally from './components/horizontal.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './pages/Projects.js';
 import Film from './pages/film.js';
-import About from '../src/pages/about.js';
+import About from './pages/about.js';
 import './App.css';
 
 function App() {

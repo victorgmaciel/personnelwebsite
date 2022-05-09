@@ -1,7 +1,6 @@
 import Profile from '../../imgs/Profile.png';
-import '../../../src/intro.css';
-import Pdf from '../documents/VictorMacielResume2022v4.pdf';
-
+import '../../intro.css';
+import Pdf from '../documents/VictorMacielResume2022-v7.pdf';
 
 function ProfilePage() {
   return (

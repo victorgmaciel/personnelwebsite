@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "react-bootstrap/Button";
 import { useNavigate } from 'react-router-dom';
-import '../../src/button.css';
+import '../button.css';
 
 function ScrollingHorizontally() {
     let navigate = useNavigate();
