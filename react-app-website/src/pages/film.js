@@ -25,7 +25,7 @@ function Film() {
                 <br />
                 The Fountain
                 <br />
-                The Secret Life of Walter Mitty
+                The Secret Life Of Walter Mitty
                 <br />
                 Interstellar
                 <br />
@@ -33,11 +33,19 @@ function Film() {
                 <br />
                 Dune Part I & II
                 <br />
+                The Dark Knight
+                <br />
                 The Godfather Part II
+                <br />
+                Eternal Sunshine Of The Spotless Mind
+                <br />
+                Everything Everywhere All At Once
+                <br />
+                The Worst Person In The World
                 <br />
                 Sunshine
                 <br />
-                Lord of the Rings trilogy
+                Lord Of The Rings trilogy
                 <br />
                 The Matrix
                 <br />
