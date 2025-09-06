@@ -26,7 +26,7 @@ function ScrollingHorizontally() {
         variant="outline-dark"
         onClick={() => navigate("/film")}
       >
-        Film
+        Victor's Vault
       </Button>
       <Button
         className="btn-primary-spacing"
