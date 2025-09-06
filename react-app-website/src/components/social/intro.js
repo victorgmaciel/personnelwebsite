@@ -1,5 +1,4 @@
-import Profile from "../../imgs/Profile.png";
-import Profile2 from "../../imgs/victor_maciel_profess.jpg";
+import Profile from "../../imgs/victor_maciel_profess.jpg";
 import "../../intro.css";
 import Pdf from "../documents/september_victor_maciel_resume.pdf";
 
@@ -7,7 +6,9 @@ function ProfilePage() {
   return (
     <div className="Profile">
       <header className="Profile-header">
-        <img src={Profile2} className="Profile-logo" alt="profile" />
+        <div className="lightning-frame">
+          <img src={Profile} className="Profile-logo" alt="profile" />
+        </div>
         <br />
         <div className="Social-icons">
           <a href="https://github.com/victorgmaciel">

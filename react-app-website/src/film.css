@@ -16,7 +16,7 @@ body{
     color:#808080;
 }
 .button-container{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
