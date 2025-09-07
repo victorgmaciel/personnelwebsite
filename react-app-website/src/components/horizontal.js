@@ -6,11 +6,11 @@ import "../button.css";
 function ScrollingHorizontally() {
   let navigate = useNavigate();
   return (
-    <div className="button-container">
+    <div className="profile-button-container">
       <Button
         className="btn-primary-spacing"
         variant="outline-dark"
-        onClick={() => navigate("/projects")}
+        onClick={() => navigate("/currentProjects")}
       >
         Current Projects
       </Button>

@@ -43,66 +43,83 @@ function ProfilePage() {
         Alum | ⚓️ U.S. Navy Veteran
       </p>
       <p className="small text-muted">Based in Seattle, WA ⛰️🌲</p>
+      {/* Row 2: Tech Stack */}
+      <div className="row justify-content-center g-3 mt-1">
+        <div className="col-12 col-lg-10">
+          <div className="card shadow-sm h-100">
+            <div className="card-body text-center">
+              <h5 className="card-title fw-bold">🛠️ Tech Stack</h5>
 
-      {/* Cards row */}
-      <div className="container mt-3">
-        <div className="row justify-content-center g-3">
-          {/* Currently Reading */}
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="card shadow-sm h-100">
-              <div className="card-body">
-                <h5 className="card-title fw-bold mb-2">
-                  📚 Currently Reading
-                </h5>
-                <div className="marquee-container marquee--gold">
-                  <div className="marquee" aria-label="Currently Reading">
-                    <div className="marquee__track">
-                      <span>Project Hail Mary — Andy Weir</span>
-                    </div>
-                  </div>
+              <div className="tech-icons d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <i className="devicon-react-original colored" title="React" />
+                <i
+                  className="devicon-nextjs-original-wordmark"
+                  title="Next.js"
+                />
+                <i className="devicon-angular-plain colored" title="Angular" />
+                <i
+                  className="devicon-typescript-plain colored"
+                  title="TypeScript"
+                />
+                <i className="devicon-python-plain colored" title="Python" />
+                <i className="devicon-fastapi-plain colored" title="FastAPI" />
+                <i className="devicon-docker-plain colored" title="Docker" />
+                <i
+                  className="devicon-postgresql-plain colored"
+                  title="PostgreSQL"
+                />
+                <i
+                  className="devicon-elasticsearch-plain colored"
+                  title="Elasticsearch"
+                />
+                <i className="devicon-googlecloud-plain colored" title="GCP" />
+                <i className="devicon-git-plain colored" title="Git" />
+              </div>
+
+              <div className="mt-3 d-flex flex-wrap gap-2" />
+            </div>
+          </div>
+        </div>
+
+        {/* Cards row 1: Reading / Playing / Want to See */}
+        <div className="container mt-3">
+          <div className="row justify-content-center g-3">
+            {/* Currently Reading */}
+            <div className="col-12 col-md-6 col-lg-4">
+              <div className="card shadow-sm h-100">
+                <div className="card-body">
+                  <h5 className="card-title fw-bold mb-2">
+                    📚 Currently Reading
+                  </h5>
+                  {/* keep as simple text or use your marquee block here */}
+                  <p className="mb-0">Project Hail Mary — Andy Weir</p>
                 </div>
               </div>
             </div>
-          </div>
-          {/* Tech Stack */}
-          <div className="col-12 col-md-6 col-lg-6">
-            <div className="card shadow-sm h-100">
-              <div className="card-body text-center">
-                <h5 className="card-title fw-bold">🛠️ Tech Stack</h5>
 
-                <div className="tech-icons d-flex flex-wrap justify-content-center align-items-center gap-3">
-                  <i className="devicon-react-original colored" title="React" />
-                  <i
-                    className="devicon-nextjs-original-wordmark"
-                    title="Next.js"
-                  />
-                  <i className="devicon-angular-plain" title="Angular" />
-                  <i
-                    className="devicon-typescript-plain colored"
-                    title="TypeScript"
-                  />
-                  <i className="devicon-python-plain colored" title="Python" />
-                  <i
-                    className="devicon-fastapi-plain colored"
-                    title="FastAPI"
-                  />
-                  <i className="devicon-docker-plain colored" title="Docker" />
-                  <i
-                    className="devicon-postgresql-plain colored"
-                    title="PostgreSQL"
-                  />
-                  <i
-                    className="devicon-elasticsearch-plain colored"
-                    title="Elasticsearch"
-                  />
-                  <i
-                    className="devicon-googlecloud-plain colored"
-                    title="GCP"
-                  />
-                  <i className="devicon-git-plain colored" title="Git" />
+            {/* Currently Playing */}
+            <div className="col-12 col-md-6 col-lg-4">
+              <div className="card shadow-sm h-100">
+                <div className="card-body">
+                  <h5 className="card-title fw-bold mb-2">
+                    🎮 Currently Playing
+                  </h5>
+                  <p className="mb-1">Fallout 4</p>
+                  <small className="text-muted">
+                    Wandering the Commonwealth… again.
+                  </small>
                 </div>
+              </div>
+            </div>
 
-                <div className="mt-3 d-flex flex-wrap gap-2" />
+            {/* Want to See */}
+            <div className="col-12 col-md-6 col-lg-4">
+              <div className="card shadow-sm h-100">
+                <div className="card-body">
+                  <h5 className="card-title fw-bold mb-2">🎬 Want to See</h5>
+                  <p className="mb-1">Weapons</p>
+                  <small className="text-muted">On my watchlist.</small>
+                </div>
               </div>
             </div>
           </div>
