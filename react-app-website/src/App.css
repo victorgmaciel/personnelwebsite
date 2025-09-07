@@ -1,0 +1,22 @@
+.Profile {
+  text-align: center;
+  height: 100vh;                
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     
+  align-items: center;    
+}
+
+.Profile-logo {
+  width: 375px;                
+  height: 375px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;   
+}
+
+.Profile-header {
+  background-color: #ffffff;
+  color: black;         
+  text-align: center;
+}

@@ -16,8 +16,18 @@ body{
     color:#808080;
 }
 .button-container{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.vault-wrapper {
+  min-height: 100vh;           /* take full viewport height */
+  display: flex;
+  flex-direction: column;      /* stack header, cards, and button */
+  justify-content: center;     /* vertical center */
+  align-items: center;         /* horizontal center */
+}
+.card-title {
+  font-weight: bold;
 }
