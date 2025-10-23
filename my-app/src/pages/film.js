@@ -121,8 +121,6 @@ function Film() {
                 <br />
                 Harry Potter and the Goblet of Fire
                 <br />
-                Project Hail Mary
-                <br />
                 The Killer Angels
                 <br />
                 The Stormlight Archive

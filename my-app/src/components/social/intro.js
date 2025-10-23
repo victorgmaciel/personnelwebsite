@@ -3,7 +3,7 @@ import Profile from "../../imgs/victor_maciel_profess.jpg";
 import "../../intro.css";
 import Pdf from "../documents/september_victor_maciel_resume.pdf";
 
-function ProfilePage() {
+export default function ProfilePage() {
   return (
     <div className="Profile">
       <header className="Profile-header">
@@ -34,7 +34,6 @@ function ProfilePage() {
           </a>
         </div>
       </header>
-
       <h1 className="font-cursive main-heading big">
         Hello, I'm Victor Maciel
       </h1>
@@ -56,7 +55,7 @@ function ProfilePage() {
                   className="devicon-nextjs-original-wordmark"
                   title="Next.js"
                 />
-                <i className="devicon-angular-plain colored" title="Angular" />
+                <i className="devicon-angular-plain" title="Angular" />
                 <i
                   className="devicon-typescript-plain colored"
                   title="TypeScript"
@@ -91,8 +90,12 @@ function ProfilePage() {
                   <h5 className="card-title fw-bold mb-2">
                     📚 Currently Reading
                   </h5>
-                  {/* keep as simple text or use your marquee block here */}
-                  <p className="mb-0">Project Hail Mary — Andy Weir</p>
+                  <p>
+                    The Long Way to a Small, Angry Planet
+                    <br />
+                    Four Thousand Weeks:Time Management for Mortals
+                  </p>
+                  <small className="text-muted">Sci-Fi and Self Help.</small>
                 </div>
               </div>
             </div>
@@ -117,7 +120,11 @@ function ProfilePage() {
               <div className="card shadow-sm h-100">
                 <div className="card-body">
                   <h5 className="card-title fw-bold mb-2">🎬 Want to See</h5>
-                  <p className="mb-1">Weapons</p>
+                  <p className="mb-1">
+                    One Battle After Another
+                    <br />
+                    Good Fortune
+                  </p>
                   <small className="text-muted">On my watchlist.</small>
                 </div>
               </div>
@@ -128,5 +135,3 @@ function ProfilePage() {
     </div>
   );
 }
-
-export default ProfilePage;
