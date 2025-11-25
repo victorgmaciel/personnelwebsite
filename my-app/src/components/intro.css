@@ -25,6 +25,7 @@
   line-height: 2;
 }
 
+
 /* Frame stays still */
 .marquee-container {
   --m-speed: 16s;

@@ -60,6 +60,8 @@ function Film() {
                 Arrival
                 <br />
                 Sinners
+                <br />
+                Frankenstein
               </Card.Text>
             </Card.Body>
           </Card>

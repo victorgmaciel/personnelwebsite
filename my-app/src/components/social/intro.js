@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "../../imgs/victor_maciel_profess.jpg";
 import "../../intro.css";
-import Pdf from "../documents/september_victor_maciel_resume.pdf";
+import Pdf from "../documents/november_victor_maciel_resume_2025.pdf";
 
 export default function ProfilePage() {
   return (
@@ -94,8 +94,12 @@ export default function ProfilePage() {
                     The Long Way to a Small, Angry Planet
                     <br />
                     Four Thousand Weeks:Time Management for Mortals
+                    <br />
+                    Demon of Unrest
                   </p>
-                  <small className="text-muted">Sci-Fi and Self Help.</small>
+                  <small className="text-muted">
+                    Sci-Fi, self help, and some history.
+                  </small>
                 </div>
               </div>
             </div>
@@ -108,8 +112,9 @@ export default function ProfilePage() {
                     🎮 Currently Playing
                   </h5>
                   <p className="mb-1">Fallout 4</p>
+                  <p className="mb-1">Fallout: New Vegas</p>
                   <small className="text-muted">
-                    Wandering the Commonwealth… again.
+                    Wandering the Commonwealth and the mojave...again.
                   </small>
                 </div>
               </div>
@@ -121,9 +126,9 @@ export default function ProfilePage() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold mb-2">🎬 Want to See</h5>
                   <p className="mb-1">
-                    One Battle After Another
-                    <br />
                     Good Fortune
+                    <br />
+                    Train Dreams
                   </p>
                   <small className="text-muted">On my watchlist.</small>
                 </div>

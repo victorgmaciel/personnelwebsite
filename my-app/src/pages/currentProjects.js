@@ -3,6 +3,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
+import submarineMaintenanceImg from "../imgs/submarine-maintenance.png";
 
 function ProjectCard({ item }) {
   const { title, image, description, tech, links = {} } = item || {};
@@ -41,7 +42,21 @@ function ProjectCard({ item }) {
 
 export default function CurrentProjects() {
   const navigate = useNavigate();
-  const projects = []; //add here when ready
+
+  // ADD PROJECTS HERE
+  const projects = [
+    {
+      title: "Submarine Maintenance",
+      image: submarineMaintenanceImg,
+      description:
+        "A web application for tracking submarine maintenance status and scheduling work periods.",
+      tech: "React, JavaScript, HTML, CSS",
+      links: {
+        demo: "https://submarine-maintenance.netlify.app/",
+        // github: "https://github.com/your-username/submarine-maintenance"
+      },
+    },
+  ];
 
   return (
     <div className="min-vh-100 d-flex justify-content-center align-items-center">

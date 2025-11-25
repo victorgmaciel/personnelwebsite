@@ -12,7 +12,9 @@
   height: 375px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: white;   
+  background-color: white;  
+  border: 4px solid #dad8d8;
+   
 }
 
 .Profile-header {
