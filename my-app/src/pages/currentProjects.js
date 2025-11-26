@@ -3,6 +3,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
+import GridironGuruImg from "../imgs/Gridiron_guru.png";
 import submarineMaintenanceImg from "../imgs/submarine-maintenance.png";
 
 function ProjectCard({ item }) {
@@ -43,7 +44,6 @@ function ProjectCard({ item }) {
 export default function CurrentProjects() {
   const navigate = useNavigate();
 
-  // ADD PROJECTS HERE
   const projects = [
     {
       title: "Submarine Maintenance",
@@ -53,11 +53,20 @@ export default function CurrentProjects() {
       tech: "React, JavaScript, HTML, CSS",
       links: {
         demo: "https://submarine-maintenance.netlify.app/",
-        // github: "https://github.com/your-username/submarine-maintenance"
+      },
+    },
+    {
+      title: "Gridiron Guru – NFL Pick'em App",
+      image: GridironGuruImg,
+      description:
+        "An NFL pick’em platform built with Firestore and React. Users make weekly picks, track live scores, compare picks, view leaderboards, and compete with friends.",
+      tech: "React, Firebase Authentication, Firestore, FastAPI, Python",
+      links: {
+        github: "https://github.com/victorgmaciel/Gridiron-Guru",
+        demo: "https://gridiron-guru-d1963.web.app/",
       },
     },
   ];
-
   return (
     <div className="min-vh-100 d-flex justify-content-center align-items-center">
       <div className="container py-4">
