@@ -111,10 +111,10 @@ export default function ProfilePage() {
                   <h5 className="card-title fw-bold mb-2">
                     🎮 Currently Playing
                   </h5>
-                  <p className="mb-1">Fallout 4</p>
-                  <p className="mb-1">Fallout: New Vegas</p>
+                  <p className="mb-1">Red Dead Redemption 2</p>
+                  <p className="mb-1">Age of Empires 2: DE</p>
                   <small className="text-muted">
-                    Wandering the Commonwealth and the mojave...again.
+                    Roaming Saint Dennis and RTSing.
                   </small>
                 </div>
               </div>
@@ -126,9 +126,9 @@ export default function ProfilePage() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold mb-2">🎬 Want to See</h5>
                   <p className="mb-1">
-                    Good Fortune
+                    Bugonia
                     <br />
-                    Train Dreams
+                    Avatar:Fire and Ash
                   </p>
                   <small className="text-muted">On my watchlist.</small>
                 </div>
