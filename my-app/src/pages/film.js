@@ -62,6 +62,8 @@ function Film() {
                 Sinners
                 <br />
                 Frankenstein
+                <br />
+                Train Dreams
               </Card.Text>
             </Card.Body>
           </Card>
