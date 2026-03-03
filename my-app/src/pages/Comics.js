@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import leiPdf from "../comics/lei.pdf";
 import JetPdf from "../comics/Jet.pdf";
 import BodPdf from "../comics/Bod.pdf";
+import fluffbros from "../imgs/fluffbros.png";
 import "../card.css";   
 import "../button.css";
 import "../comics.css"; 
@@ -43,6 +44,7 @@ export default function Comics() {
   return (
     <div className="comics-page">
       <div className="comics-header">
+        <img src={fluffbros} alt="Fluff Bros" className="logo" />
         <h1 className="header">Comics</h1>
 
         <Button

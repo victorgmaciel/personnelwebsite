@@ -81,3 +81,15 @@
   border: 0;
   background: rgba(0,0,0,0.35);
 }
+
+.logo {
+  width: 180px;
+  height: 180px;
+  display: block;
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
