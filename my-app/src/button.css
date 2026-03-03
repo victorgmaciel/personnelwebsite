@@ -1,17 +1,12 @@
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.btn-primary-spacing {
-  margin-right: 5px;
-  margin-bottom: 5px !important;
-}
+
 .profile-button-container {
-  margin-bottom: -10px;
+  margin-top: 10px;
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: relative;
+  z-index: 10;
 }

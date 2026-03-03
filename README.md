@@ -9,13 +9,6 @@ I focus on building clean, modern, reliable applications across the full stack. 
 
 This site serves as my professional hub — showcasing who I am, what I’ve built, and what I’m working on next.
 
-## 🔧 Tech Stack
-
-- **Frontend:** Next.js, React, TypeScript
-- **Styling:** TailwindCSS (or your chosen styling setup)
-- **Deployment:** Vercel (or current hosting platform)
-- **Tooling:** ESLint, Prettier, GitHub version control
-
 ## 🌐 Features
 
 - Clean personal landing page

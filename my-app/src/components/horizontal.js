@@ -1,5 +1,6 @@
-import React from "react";
+
 import Button from "react-bootstrap/Button";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "../button.css";
 
@@ -14,6 +15,22 @@ function ScrollingHorizontally() {
       >
         Current Projects
       </Button>
+     <OverlayTrigger
+  placement="top"
+  overlay={
+    <Tooltip id="nsfw-tooltip">
+      NSFW – 18+ Content
+    </Tooltip>
+  }
+>
+  <Button
+    className="btn-primary-spacing"
+    variant="outline-dark"
+    onClick={() => navigate("/comics")}
+  >
+    Comics
+  </Button>
+</OverlayTrigger>
       <Button
         className="btn-primary-spacing"
         variant="outline-dark"

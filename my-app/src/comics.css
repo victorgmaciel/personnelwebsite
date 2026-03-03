@@ -1,0 +1,83 @@
+.comics-page {
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.comics-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.comics-list {
+  display: grid;
+  gap: 14px;
+  justify-content: center;
+}
+
+.comics-card {
+  padding: 16px;
+  width: min(720px, 92vw);
+  display: flex;
+  justify-content: center;
+}
+
+.comics-title-btn {
+  width: 100%;
+}
+
+/* Modal */
+.comic-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+.comic-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.80);
+  border: none;
+  cursor: pointer;
+}
+
+.comic-modal-content {
+  position: relative;
+  width: min(1100px, 94vw);
+  height: min(86vh, 900px);
+  background: rgba(12,12,12,0.95);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.comic-modal-top {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  color: white;
+}
+
+.comic-modal-title {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.comic-pdf {
+  width: 100%;
+  height: calc(100% - 54px);
+  border: 0;
+  background: rgba(0,0,0,0.35);
+}

@@ -4,10 +4,25 @@
    
 }
 
-.card{
-    color: black;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  color: black;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  background: #ffffff;
+  border-radius: 12px;
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+  
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.12),
+    0 0 12px rgba(120,170,255,0.25);
 }
 .btn-primary-spacing{
     display: flex;
@@ -15,18 +30,30 @@
   align-items: center;
   text-align: center;
 }
-.button-container{
-    display: flex;
+.button-container {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
 }
 
-img {
-    float: left;
-    width:  275px;
-    height: 275px;
-    object-fit: cover;
+
+.btn-primary-spacing {
+  margin: 0; 
+}
+
+img { 
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
+}
+
+.profile-img {
+  float: left;
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
 }
 iframe{
     display: flex;
@@ -35,10 +62,11 @@ iframe{
 }
 
 .projects-wrapper {
-  min-height: 100vh;         
   display: flex;
-  align-items: center;           
-  justify-content: center;     
+  justify-content: center;
+  align-items: flex-start; 
+  min-height: auto;          
+  padding: 32px 16px;
 }
 
 .project-button-container {

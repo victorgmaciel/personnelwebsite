@@ -1,4 +1,3 @@
-import React from "react";
 import Profile from "../../imgs/victor_maciel_profess.jpg";
 import "../../intro.css";
 import Pdf from "../documents/november_victor_maciel_resume_2025.pdf";
@@ -93,12 +92,12 @@ export default function ProfilePage() {
                   <p>
                     The Long Way to a Small, Angry Planet
                     <br />
-                    Four Thousand Weeks:Time Management for Mortals
+                    Carl's Doomsday Scenario
                     <br />
                     Demon of Unrest
                   </p>
                   <small className="text-muted">
-                    Sci-Fi, self help, and some history.
+                    Sci-Fi, Dungeons!, and some history.
                   </small>
                 </div>
               </div>
@@ -111,10 +110,10 @@ export default function ProfilePage() {
                   <h5 className="card-title fw-bold mb-2">
                     🎮 Currently Playing
                   </h5>
-                  <p className="mb-1">Red Dead Redemption 2</p>
+                  <p className="mb-1">Red Dead Redemption</p>
                   <p className="mb-1">Age of Empires 2: DE</p>
                   <small className="text-muted">
-                    Roaming Saint Dennis and RTSing.
+                    Roaming the west and RTSing.
                   </small>
                 </div>
               </div>
@@ -126,9 +125,11 @@ export default function ProfilePage() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold mb-2">🎬 Want to See</h5>
                   <p className="mb-1">
-                    Bugonia
+                    The Odyssey
                     <br />
-                    Avatar:Fire and Ash
+                    the Bride
+                     <br />
+                     Peaky Blinders: The Immortal Man
                   </p>
                   <small className="text-muted">On my watchlist.</small>
                 </div>

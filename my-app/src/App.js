@@ -7,11 +7,12 @@ import Film from "./pages/film.js";
 import About from "./pages/about.js";
 import "./App.css";
 import CurrentProjects from "./pages/currentProjects.js";
+import Comics from "./pages/Comics.js";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <div className="content">
           <Routes>
             <Route
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/projects" element={<Projects />} />
             <Route exact path="/film" element={<Film />} />
             <Route exact path="/about" element={<About />} />
+            <Route exact path="/comics" element={<Comics />} />
           </Routes>
         </div>
       </div>
