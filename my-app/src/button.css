@@ -1,12 +1,13 @@
-
 .profile-button-container {
-  margin-top: 10px;
-  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  position: relative;
-  z-index: 10;
+  padding: 10px 16px;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 100;
 }

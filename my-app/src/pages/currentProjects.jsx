@@ -1,22 +1,27 @@
 // src/pages/CurrentProjects.jsx
 import React from "react";
 import { Card } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { useNavigate } from "react-router-dom";
 import GridironGuruImg from "../imgs/Gridiron_guru.png";
 import submarineMaintenanceImg from "../imgs/submarine-maintenance.png";
 
 function ProjectCard({ item }) {
-  const { title, image, description, tech, links = {} } = item || {};
+  const { title, image, description, tech, links = {}, status } = item || {};
   return (
-    <Card className="text-center shadow-sm h-100" border="light">
-      {image && <Card.Img variant="top" src={image} alt={title || "project"} />}
+    <Card className="text-center shadow-sm h-100 position-relative" border="light">
+      {status === "live" && (
+        <div className="position-absolute top-0 end-0 m-2" style={{ zIndex: 1 }}>
+          <span className="badge bg-success" style={{ fontSize: "0.72rem" }}>
+            ● Live
+          </span>
+        </div>
+      )}
+      {image && <Card.Img variant="top" src={image} alt={title || "project"} style={{ height: "160px", objectFit: "cover" }} />}
       <Card.Body className="d-flex flex-column">
         {title && <Card.Title className="fw-bold">{title}</Card.Title>}
         {description && <Card.Text className="mb-2">{description}</Card.Text>}
         {tech && (
-          <Card.Text className="text-muted">
-            <b>utilized:</b> {tech}
+          <Card.Text className="text-muted" style={{ fontSize: "0.82rem" }}>
+            <b>Stack:</b> {tech}
           </Card.Text>
         )}
         <div className="mt-auto d-flex justify-content-center gap-3">
@@ -27,7 +32,7 @@ function ProjectCard({ item }) {
           )}
           {links.demo && (
             <Card.Link href={links.demo} target="_blank" rel="noreferrer">
-              Demo
+              Live Demo
             </Card.Link>
           )}
           {links.video && (
@@ -42,15 +47,14 @@ function ProjectCard({ item }) {
 }
 
 export default function CurrentProjects() {
-  const navigate = useNavigate();
-
   const projects = [
     {
       title: "Submarine Maintenance",
       image: submarineMaintenanceImg,
       description:
-        "A web application for tracking submarine maintenance status and scheduling work periods.",
+        "Built from firsthand Navy experience — a React app for tracking submarine maintenance schedules, work periods, and system status. Bridges real operational knowledge with modern web development.",
       tech: "React, JavaScript, HTML, CSS",
+      status: "live",
       links: {
         demo: "https://submarine-maintenance.netlify.app/",
       },
@@ -59,44 +63,26 @@ export default function CurrentProjects() {
       title: "Gridiron Guru – NFL Pick'em App",
       image: GridironGuruImg,
       description:
-        "An NFL pick’em platform built with Firestore and React. Users make weekly picks, track live scores, compare picks, view leaderboards, and compete with friends.",
-      tech: "React, Firebase Authentication, Firestore, FastAPI, Python",
+        "Full-stack NFL pick'em platform with real-time Firestore sync. Users make weekly picks, track live scores, view leaderboards, and compete with friends — backed by a FastAPI Python service for game data ingestion.",
+      tech: "React, Firebase Auth, Firestore, FastAPI, Python",
+      status: "live",
       links: {
         github: "https://github.com/victorgmaciel/Gridiron-Guru",
         demo: "https://gridiron-guru-d1963.web.app/",
       },
     },
   ];
+
   return (
     <div className="min-vh-100 d-flex justify-content-center align-items-center">
       <div className="container py-4">
         <h1 className="text-center mb-4">Current Projects</h1>
-
         <div className="row justify-content-center g-3">
-          {projects.length === 0 ? (
-            <div className="col-12 col-md-8 col-lg-6">
-              <Card className="text-center" border="light">
-                <Card.Body>
-                  <Card.Title className="fw-bold">No projects yet</Card.Title>
-                  <Card.Text className="text-muted">
-                    Add items to the <code>projects</code> array.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+          {projects.map((p, i) => (
+            <div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3">
+              <ProjectCard item={p} />
             </div>
-          ) : (
-            projects.map((p, i) => (
-              <div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3">
-                <ProjectCard item={p} />
-              </div>
-            ))
-          )}
-        </div>
-
-        <div className="d-flex justify-content-center mt-4">
-          <Button variant="outline-dark" onClick={() => navigate("/")}>
-            Home
-          </Button>
+          ))}
         </div>
       </div>
     </div>

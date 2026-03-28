@@ -1,7 +1,7 @@
 .container{
     margin-left: auto;
     margin-right:auto;
-   
+
 }
 
 .card {
@@ -10,11 +10,11 @@
 
   background: #ffffff;
   border-radius: 12px;
-  transition: 
+  transition:
     transform 0.25s ease,
     box-shadow 0.35s ease,
     border 0.35s ease;
-  
+
   border: 1px solid rgba(0,0,0,0.08);
 }
 
@@ -24,12 +24,15 @@
     0 8px 25px rgba(0,0,0,0.12),
     0 0 12px rgba(120,170,255,0.25);
 }
-.btn-primary-spacing{
-    display: flex;
+
+.btn-primary-spacing {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
 }
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -38,23 +41,18 @@
   margin-top: auto;
 }
 
-
-.btn-primary-spacing {
-  margin: 0; 
-}
-
-img { 
+img {
   width: 275px;
   height: 275px;
   object-fit: cover;
 }
 
 .profile-img {
-  float: left;
   width: 275px;
   height: 275px;
   object-fit: cover;
 }
+
 iframe{
     display: flex;
     align-items: center;
@@ -64,15 +62,13 @@ iframe{
 .projects-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
-  min-height: auto;          
+  align-items: flex-start;
+  min-height: auto;
   padding: 32px 16px;
 }
 
 .project-button-container {
-  margin-top: 2rem;      
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
-
-  
