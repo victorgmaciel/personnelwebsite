@@ -5,15 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(ellipse at top center, #eef2ff 0%, #ffffff 55%);
+  background: radial-gradient(ellipse at top center, #1a1d2e 0%, #111318 55%);
 }
 
 .site-footer {
   text-align: center;
   padding: 20px 16px;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.82rem;
-  color: #767676;
+  color: #a0a0a0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,12 +22,12 @@
 }
 
 .site-footer a {
-  color: #555;
+  color: #c0c0c0;
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #1a1a1a;
+  color: #e8e8e8;
 }
 
 .Profile-logo {
@@ -35,8 +35,8 @@
   height: 375px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: white;
-  border: 4px solid white;
+  background-color: #1a1b20;
+  border: 4px solid #1a1b20;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .Profile-header {
-  color: black;
+  color: #e8e8e8;
   text-align: center;
 }
 

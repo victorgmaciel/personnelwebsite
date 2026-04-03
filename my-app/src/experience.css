@@ -11,8 +11,8 @@
 }
 
 .experience-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #1a1b20;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 24px 28px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -35,14 +35,14 @@
 .experience-title {
   font-weight: 700;
   font-size: 1rem;
-  color: #1a1a1a;
+  color: #e8e8e8;
   margin: 0 0 4px;
 }
 
 .experience-company {
   font-weight: 600;
   font-size: 0.9rem;
-  color: #444;
+  color: #c0c0c0;
 }
 
 .experience-location {
@@ -60,7 +60,7 @@
 .experience-bullets {
   margin: 0 0 16px;
   padding-left: 20px;
-  color: #333;
+  color: #c8c8c8;
   font-size: 0.88rem;
   line-height: 1.65;
 }
@@ -76,9 +76,9 @@
 }
 
 .experience-tag {
-  background: #f1f3f9;
-  color: #444;
-  border: 1px solid #e0e4f0;
+  background: #1e2030;
+  color: #c0c0c0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   padding: 3px 12px;
   font-size: 0.75rem;

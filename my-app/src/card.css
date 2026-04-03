@@ -5,17 +5,17 @@
 }
 
 .card {
-  color: black;
+  color: #e8e8e8;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 
-  background: #ffffff;
+  background: #1a1b20;
   border-radius: 12px;
   transition:
     transform 0.25s ease,
     box-shadow 0.35s ease,
     border 0.35s ease;
 
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .card:hover {

@@ -11,7 +11,7 @@
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background: #e0e4f0;
+  background: #2a2d3a;
 }
 
 .timeline-item {
@@ -33,15 +33,15 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #c8cfe8;
-  border: 2px solid white;
-  box-shadow: 0 0 0 2px #c8cfe8;
+  background: #3a3d4a;
+  border: 2px solid #111318;
+  box-shadow: 0 0 0 2px #3a3d4a;
   flex-shrink: 0;
 }
 
 .timeline-item--active .timeline-dot {
-  background: #1a1a1a;
-  box-shadow: 0 0 0 2px #1a1a1a;
+  background: #e8e8e8;
+  box-shadow: 0 0 0 2px #e8e8e8;
 }
 
 .timeline-content {
@@ -60,7 +60,7 @@
   display: block;
   font-weight: 700;
   font-size: 0.95rem;
-  color: #1a1a1a;
+  color: #e8e8e8;
   line-height: 1.3;
 }
 
