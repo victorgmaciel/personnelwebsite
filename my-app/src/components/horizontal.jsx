@@ -6,7 +6,7 @@ import "../button.css";
 function ScrollingHorizontally() {
   const navigate = useNavigate();
   const location = useLocation();
-  const active = (path) => location.pathname === path ? "dark" : "outline-dark";
+  const active = (path) => location.pathname === path ? "light" : "outline-light";
 
   return (
     <nav className="profile-button-container">

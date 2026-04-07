@@ -10,10 +10,10 @@ body{
 
 }
 .filmText{
-    color:#767676;
+    color:#444;
 }
 .filmText:hover{
-    color: #1a1a1a;
+    color: #222;
 }
 .button-container{
   display: flex;
