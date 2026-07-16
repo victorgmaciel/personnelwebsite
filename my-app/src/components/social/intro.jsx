@@ -1,6 +1,6 @@
 import Profile from "../../imgs/victor_maciel_profess.jpg";
 import "../../intro.css";
-import Pdf from "../documents/victor_maciel_resume_2026.pdf";
+import Pdf from "../documents/victor_maciel_resumev3_2026.pdf";
 
 export default function ProfilePage() {
   return (
@@ -59,8 +59,10 @@ export default function ProfilePage() {
                 {[
                   { cls: "devicon-javascript-plain colored", label: "JavaScript" },
                   { cls: "devicon-react-original colored", label: "React" },
+                  { cls: "devicon-nextjs-plain", label: "Next.js" },
                   { cls: "devicon-angularjs-plain colored", label: "Angular" },
                   { cls: "devicon-typescript-plain colored", label: "TypeScript" },
+                  { cls: "devicon-nodejs-plain colored", label: "Node.js" },
                   { cls: "devicon-python-plain colored", label: "Python" },
                   { cls: "devicon-fastapi-plain colored", label: "FastAPI" },
                   { cls: "devicon-flask-original", label: "Flask" },
@@ -68,6 +70,7 @@ export default function ProfilePage() {
                   { cls: "devicon-kubernetes-plain colored", label: "Kubernetes" },
                   { cls: "devicon-terraform-plain colored", label: "Terraform" },
                   { cls: "devicon-postgresql-plain colored", label: "PostgreSQL" },
+                  { cls: "devicon-redis-plain colored", label: "Redis" },
                   { cls: "devicon-elasticsearch-plain colored", label: "Elasticsearch" },
                   { cls: "devicon-googlecloud-plain colored", label: "GCP" },
                   { cls: "devicon-azure-plain colored", label: "Azure" },
@@ -85,7 +88,7 @@ export default function ProfilePage() {
                 🤖 AI &amp; ML
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-2">
-                {["OpenAI API", "Claude API", "Claude Code", "RAG / pgvector", "LLM Development", "Supabase"].map((tool) => (
+                {["OpenAI API", "Claude API", "Claude Code", "RAG / pgvector", "ChromaDB", "LLM Development", "Supabase"].map((tool) => (
                   <span key={tool} className="ai-tool-badge">{tool}</span>
                 ))}
               </div>
@@ -101,13 +104,13 @@ export default function ProfilePage() {
                 <div className="card-body">
                   <h5 className="card-title fw-bold mb-2">📚 Currently Reading</h5>
                   <p>
-                    The Long Way to a Small, Angry Planet
+                    Demon Of Unrest
                     <br />
-                    Carl's Doomsday Scenario
+                    Lonesome Dove
                     <br />
-                    Demon of Unrest
+                    Interview With The Vampire
                   </p>
-                  <small className="text-muted">Sci-Fi, Dungeons!, and some history.</small>
+                  <small className="text-muted">Sci-Fi, Western, and some vampires.</small>
                 </div>
               </div>
             </div>
@@ -116,9 +119,9 @@ export default function ProfilePage() {
               <div className="card shadow-sm h-100">
                 <div className="card-body">
                   <h5 className="card-title fw-bold mb-2">🎮 Currently Playing</h5>
-                  <p className="mb-1">Red Dead Redemption</p>
+                  <p className="mb-1">Mouse P.I. For Hire</p>
                   <p className="mb-1">Age of Empires 2: DE</p>
-                  <small className="text-muted">Roaming the west and RTSing.</small>
+                  <small className="text-muted">Lets play Age!</small>
                 </div>
               </div>
             </div>
@@ -130,7 +133,7 @@ export default function ProfilePage() {
                   <p className="mb-1">
                     The Odyssey
                     <br />
-                    The Bride
+                    Any Good Horror Movie 
                     <br />
                     Peaky Blinders: The Immortal Man
                   </p>
